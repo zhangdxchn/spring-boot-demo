@@ -14,11 +14,11 @@ public class News {
 
     private String author;
 
-    private String imageurl;
+    private String imageUrl;
 
     private String description;
 
-    private Integer readnumber;
+    private Integer readNumber;
 
     private String content;
 
@@ -54,12 +54,12 @@ public class News {
         this.author = author;
     }
 
-    public String getImageurl() {
-        return imageurl;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImageurl(String imageurl) {
-        this.imageurl = imageurl;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getDescription() {
@@ -70,12 +70,12 @@ public class News {
         this.description = description;
     }
 
-    public Integer getReadnumber() {
-        return readnumber;
+    public Integer getReadNumber() {
+        return readNumber;
     }
 
-    public void setReadnumber(Integer readnumber) {
-        this.readnumber = readnumber;
+    public void setReadNumber(Integer readNumber) {
+        this.readNumber = readNumber;
     }
 
     public String getContent() {

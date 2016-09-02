@@ -5,4 +5,9 @@ package com.zhangdxchn.dao.base;
  */
 public interface IBaseDao {
 
+    int add(Object object);
+
+    int update(Object object);
+
+    int delete(Object object);
 }
