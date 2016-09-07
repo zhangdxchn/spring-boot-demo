@@ -37,11 +37,6 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-log4j2</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -98,6 +93,46 @@
 			<artifactId>json-lib</artifactId>
 			<classifier>jdk15</classifier>
 			<version>2.4</version>
+		</dependency>
+
+		<!-- http -->
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+			<!--<exclusions>-->
+			<!--<exclusion>-->
+			<!--<artifactId>commons-codec</artifactId>-->
+			<!--<groupId>commons-codec</groupId>-->
+			<!--</exclusion>-->
+			<!--</exclusions>-->
+		</dependency>
+
+		<!-- 用于https请求 -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.5.1</version>
+			<!--<exclusions>-->
+			<!--<exclusion>-->
+			<!--<artifactId>commons-codec</artifactId>-->
+			<!--<groupId>commons-codec</groupId>-->
+			<!--</exclusion>-->
+			<!--</exclusions-->
+		</dependency>
+
+		<!-- dom4j -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<!-- xstream -->
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.8</version>
 		</dependency>
 
 	</dependencies>
