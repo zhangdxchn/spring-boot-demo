@@ -1,10 +1,10 @@
-package com.zhangdxchn.service.impl;
+package com.zhangdxchn.service.weixin.impl;
 
 import com.zhangdxchn.lib.weixin.WeiXinEnum;
 import com.zhangdxchn.lib.weixin.bean.*;
 import com.zhangdxchn.lib.weixin.bean.req.TextMessage;
 import com.zhangdxchn.lib.weixin.comm.MessageUtil;
-import com.zhangdxchn.service.IWxService;
+import com.zhangdxchn.service.weixin.IWxService;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 

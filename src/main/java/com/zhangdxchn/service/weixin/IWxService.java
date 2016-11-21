@@ -1,4 +1,4 @@
-package com.zhangdxchn.service;
+package com.zhangdxchn.service.weixin;
 
 
 import com.zhangdxchn.lib.weixin.bean.*;
