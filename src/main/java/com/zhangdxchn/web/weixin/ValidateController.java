@@ -1,6 +1,6 @@
-package com.zhangdxchn.controller.weixin;
+package com.zhangdxchn.web.weixin;
 
-import com.zhangdxchn.service.IWxService;
+import com.zhangdxchn.service.weixin.IWxService;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

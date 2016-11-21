@@ -1,4 +1,4 @@
-package com.zhangdxchn.controller.base;
+package com.zhangdxchn.web.base;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.log4j.Logger;
@@ -13,6 +13,7 @@ import java.lang.reflect.UndeclaredThrowableException;
 import java.sql.SQLException;
 
 /**
+ * RESTful 全局设置
  * Created by zhangdx on 16/8/5.
  */
 @RestController

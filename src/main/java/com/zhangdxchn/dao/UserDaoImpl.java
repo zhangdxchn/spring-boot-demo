@@ -10,12 +10,18 @@ import java.util.Map;
  * Created by zhangdx on 16/8/7.
  */
 @Repository
-public class NewsDaoImpl extends BaseDaoImpl implements INewsDao {
+public class UserDaoImpl extends BaseDaoImpl implements IUserDao {
 
     @Override
     public List<Map<String, Object>> fetchAll() {
-        String sql = "select * from tb_news";
+        String sql = "select * from tb_user";
         return this.jdbcTemplate.queryForList(sql);
+    }
+
+    @Override
+    public Map fetch(Integer id) {
+        String sql = "select * from tb_user where id = ?";
+        return this.jdbcTemplate.queryForMap(sql, id);
     }
 
     //    @Override

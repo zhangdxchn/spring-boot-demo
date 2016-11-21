@@ -1,7 +1,7 @@
-package com.zhangdxchn.controller.test;
+package com.zhangdxchn.web.test;
 
-import com.zhangdxchn.controller.base.BaseRestController;
-import com.zhangdxchn.dao.NewsDaoImpl;
+import com.zhangdxchn.dao.UserDaoImpl;
+import com.zhangdxchn.web.base.BaseRestController;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
@@ -20,11 +20,24 @@ public class TestController extends BaseRestController {
     Logger logger = Logger.getLogger(TestController.class);
 
     @Autowired
-    private NewsDaoImpl newsDaoImpl;
+    private UserDaoImpl userDaoImpl;
 
 
-    @RequestMapping(value = "/news", produces = "application/json;charset=UTF-8")
-    public String weather(
+    @RequestMapping(value = "/user", produces = "application/json;charset=UTF-8")
+    public String testUser(
+            HttpServletRequest request,
+            HttpServletResponse response
+//            ModelMap model,
+//            ,
+//            @RequestHeader HttpHeaders headers,
+//            @RequestHeader(value = "X-Api-Version") String apiVersion
+    ) {
+
+        return resultEntitySuccess(userDaoImpl.fetchAll());
+    }
+
+    @RequestMapping(value = "/login", produces = "application/json;charset=UTF-8")
+    public String testLogin(
             ModelMap model,
             HttpServletRequest request,
             HttpServletResponse response
@@ -33,11 +46,6 @@ public class TestController extends BaseRestController {
 //            @RequestHeader(value = "X-Api-Version") String apiVersion
     ) {
 
-
-        //test 全局异常
-//        List<Integer> a = null;
-//        a.add(1);
-
-        return resultEntitySuccess(newsDaoImpl.fetchAll());
+        return resultEntitySuccess(userDaoImpl.fetchAll());
     }
 }

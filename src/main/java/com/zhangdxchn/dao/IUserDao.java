@@ -8,6 +8,8 @@ import java.util.Map;
 /**
  * Created by zhangdx on 16/8/7.
  */
-public interface INewsDao extends IBaseDao{
+public interface IUserDao extends IBaseDao{
     List<Map<String, Object>> fetchAll();
+
+    Map fetch(Integer id);
 }

@@ -1,4 +1,4 @@
-package com.zhangdxchn.controller.base;
+package com.zhangdxchn.web.base;
 
 /**
  * 返回的 JSON 约定格式

@@ -1,4 +1,4 @@
-package com.zhangdxchn.controller.base;
+package com.zhangdxchn.web.base;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

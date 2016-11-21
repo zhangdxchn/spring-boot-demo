@@ -1,4 +1,4 @@
-package com.zhangdxchn.controller.base;
+package com.zhangdxchn.web.base;
 
 /**
  * Created by zhangdx on 16/8/14.
