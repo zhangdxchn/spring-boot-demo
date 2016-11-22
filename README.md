@@ -1,3 +1,10 @@
 # spring-boot-demo
-spring-boot-demo
-with RESTful api + Spring JDBC Template
+
+## Features
+* Demo RESTful api
+* Demo Spring JDBC Template
+* Demo Junit + Mockito
+
+## TODOs
+* Demo Druid
+* Weixin API
