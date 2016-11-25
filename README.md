@@ -1,5 +1,4 @@
 # spring-boot-demo
----
 
 ![Build Status](https://travis-ci.org/zhangdxchn/spring-boot-demo.svg?branch=master)
 
